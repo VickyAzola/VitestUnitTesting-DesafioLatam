@@ -12,7 +12,7 @@ describe('ShowCounter', () => {
     const pinia = createPinia()
     setActivePinia(pinia)
 
-    //montar el componente usando pinia
+    //montar el componente ShowCounter usando pinia
     wrapper = mount(ShowCounter, {
       global: {
         plugins: [pinia] 
@@ -45,13 +45,13 @@ describe('ShowCounter', () => {
 
   //se verifica que el boton sumar funcione correctamente
   it('El contador aumenta en 1 al hacer click en "Sumar"', async () => {
-    //obtener el texto del boton antes del click y pasarlo a numero
+    //obtener el texto del counter antes del click y pasarlo a numero
     const counterAntes = Number(wrapper.find('span').text())
     //encontrar el boton mediente su id
     const btnSumar = wrapper.find('#sumar')
     //desencadenar el evento click
     await btnSumar.trigger('click')
-    //obtener el texto del boton despues del click y pasarlo a numero
+    //obtener el texto del counter despues del click y pasarlo a numero
     const counterDespues = Number(wrapper.find('span').text())
     //comparar si el valor aumenta luego del click
     expect(counterAntes).toBeLessThan(counterDespues)
@@ -59,13 +59,13 @@ describe('ShowCounter', () => {
 
   //se verifica que el boton restar funcione correctamente
   it('El contador disminuye en 1 al hacer click en "Restar"', async () => {
-    //obtener el texto del boton antes del click y pasarlo a numero
+    //obtener el texto del counter antes del click y pasarlo a numero
     const counterAntes = Number(wrapper.find('span').text())
     //encontrar el boton mediente su id
     const btnRestar = wrapper.find('#restar')
     //desencadenar el evento click
     await btnRestar.trigger('click')
-    //obtener el texto del boton despues del click y pasarlo a numero
+    //obtener el texto del counter despues del click y pasarlo a numero
     const counterDespues = Number(wrapper.find('span').text())
     //comparar si el valor disminuyo luego del click
     expect(counterDespues).toBeLessThan(counterAntes)

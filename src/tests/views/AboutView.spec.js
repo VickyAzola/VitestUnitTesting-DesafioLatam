@@ -13,7 +13,7 @@ describe('HomeView', () => {
       history: createWebHistory(),
       routes: [
         {
-          path: '/',
+          path: '/about',
           name: 'about',
           component: AboutView
         }
@@ -22,7 +22,7 @@ describe('HomeView', () => {
   });
 
   test('Probando la existencia de la vista AboutView', async () => {
-    // Navegar a la ruta home y esperar que el router esté listo
+    // Navegar a la ruta about y esperar que el router esté listo
     router.push({ name: 'about' });
     await router.isReady();
 
