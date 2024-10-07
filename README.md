@@ -1,41 +1,63 @@
-# vue-project
+# Pruebas Unitarias con Vue y Firebase Hosting
 
-This template should help get you started developing with Vue 3 in Vite.
+## Tabla de Contenidos
 
-## Recommended IDE Setup
+- [Descripción](#descripción)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Instalación](#instalación)
+- [Autores](#autores)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Descripción
 
-## Customize configuration
+Este es un proyecto desarrollado con Vue.js utilizando Vite, en el que se implementan pruebas unitarias con Vitest y se despliega en Firebase Hosting. 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Puedes reviar la página [al hacer click aqui](https://prueba-testing-b89cf.web.app/)
 
-## Project Setup
+## Tecnologías Utilizadas
 
-```sh
-npm install
-```
+- **HTML5**: Para la estructura del sitio web.
+- **CSS**: Para el diseño y la presentación del sitio web.
+- **Vue.js**: Framework de JavaScript para construir interfaces de usuario.
+- **Vitest**: Framework de pruebas unitarias para proyectos que usan Vite.
+- **Vue Router**: Para Single Page Aplication.
+- **Pinia**: Para la administración del estado global en el proyecto.
+- **Firebase Hosting**: Para hacer deploy de la aplicación.
 
-### Compile and Hot-Reload for Development
+## Instalación
 
-```sh
-npm run dev
-```
+Sigue los siguientes pasos para instalar y ejecutar el proyecto en tu entorno local:
 
-### Compile and Minify for Production
+1. Clona el repositorio:
 
-```sh
-npm run build
-```
+    ```bash
+    git clone https://github.com/VickyAzola/VitestUnitTesting-DesafioLatam.git
+    ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+2. Navega al directorio del proyecto:
 
-```sh
-npm run test:unit
-```
+    ```bash
+    cd VitestUnitTesting-DesafioLatam
+    ```
 
-### Lint with [ESLint](https://eslint.org/)
+3. Instala las dependencias necesarias:
 
-```sh
-npm run lint
-```
+    ```bash
+    npm install
+    ```
+4. Para ejecutar las pruebas unitarias utiliza el comando:
+   
+   ```bash
+   npm run test:unit
+   ```
+   
+5. Inicia el servidor de desarrollo:
+
+    ```bash
+    npm run dev
+    ```
+
+6. Abre el enlace 'Local' en tu navegador para ver la aplicación en funcionamiento.
+
+## Autores
+
+- **Desarrollador Principal y Diseñador**: [Victoria Azola Silva](https://github.com/VickyAzola) - Responsable del desarrollo del código.
