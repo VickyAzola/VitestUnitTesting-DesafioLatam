@@ -13,6 +13,8 @@ Este es un proyecto desarrollado con Vue.js utilizando Vite, en el que se implem
 
 Puedes reviar la página [al hacer click aqui](https://prueba-testing-b89cf.web.app/)
 
+![unitTesting](https://github.com/user-attachments/assets/52f63c17-e8fd-4b0c-9529-2bc28cda2fd8)
+
 ## Tecnologías Utilizadas
 
 - **HTML5**: Para la estructura del sitio web.
